@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Car Rental - Penyewaan Kendaraan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ABC Car Rental</h1>
+            <p>Pilih kendaraan terbaik untuk perjalanan Anda</p>
+        </header>
+
+        <main>
+            <!-- Daftar Mobil -->
+            <section class="car-selection">
+                <h2>Pilih Mobil</h2>
+                <div class="car-grid" id="carGrid">
+                    <!-- Cars will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Form Pelanggan -->
+            <section class="customer-form">
+                <h2>Data Pelanggan</h2>
+                <div class="form-group">
+                    <label for="customerName">Nama Pelanggan:</label>
+                    <input type="text" id="customerName" placeholder="Masukkan nama Anda" required>
+                </div>
+                <button id="calculateBtn" class="btn btn-primary">Hitung Total</button>
+            </section>
+
+            <!-- Ringkasan Pemesanan -->
+            <section class="order-summary" id="orderSummary" style="display: none;">
+                <h2>Ringkasan Pemesanan</h2>
+                <div id="summaryContent"></div>
+                <div class="total-section">
+                    <h3>Total Keseluruhan: <span id="grandTotal">Rp 0</span></h3>
+                </div>
+                <button id="saveOrderBtn" class="btn btn-success">Simpan Pemesanan</button>
+            </section>
+
+            <!-- Daftar Pemesanan -->
+            <section class="order-history">
+                <h2>Riwayat Pemesanan</h2>
+                <div id="orderHistory">
+                    <p class="no-orders">Belum ada pemesanan</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
